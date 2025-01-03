@@ -55,7 +55,7 @@ The source code for the E-Com web application we developed can be found here: [G
 * [GitHub Actions](https://github.com/features/actions)
 * [AirFlow](https://airflow.apache.org/)
 * [MLflow](https://mlflow.org/)
-* [GPT 4.0 mini](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/), [Llama3.1 8B](https://huggingface.co/meta-llama/Llama-3.1-8B), [Llama3.1 70B](https://huggingface.co/meta-llama/Llama-3.1-70B) and [HuggingFace Transformer]
+* [GPT 4.0 mini](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/), [Llama3.1 8B](https://huggingface.co/meta-llama/Llama-3.1-8B), [Llama3.1 70B](https://huggingface.co/meta-llama/Llama-3.1-70B) and [HuggingFace Transformer](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
 * [Faiss DB](https://engineering.fb.com/2017/03/29/data-infrastructure/faiss-a-library-for-efficient-similarity-search/)
 * [Docker](https://www.docker.com/)
 * [Google Cloud Platform](https://cloud.google.com/) (Buckets, Cloudrun, CloudSQL, Cloud Log Monitoring and Artifact Registry)

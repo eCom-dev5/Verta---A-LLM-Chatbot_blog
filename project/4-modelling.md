@@ -10,7 +10,7 @@
 7. [Cost Analysis](../project/7-cost_analysis.md)
 
 ## Model Overview
-The Verta (Base Model) Chatbot is designed to handle user queries in real time with high accuracy and contextual understanding. It combines advanced retrieval systems, metadata summarization, and state-of-the-art generative language models to deliver clear and engaging responses. At the heart of the system is a Supervisor Module that orchestrates all these components seamlessly.
+The Verta (Base Model) Chatbot is designed to handle user queries in real-time with high accuracy and contextual understanding. It combines advanced retrieval systems, metadata summarization, and state-of-the-art generative language models to deliver clear and engaging responses. At the heart of the system is a Supervisor Module that orchestrates all these components seamlessly.
 
 To ensure smooth operation and efficiency, the chatbot integrates with LangFuse, which helps monitor query traces, track token usage, and manage costs effectively. This modular and scalable setup makes it perfect for real-world applications like retrieving product information, providing customer support, and offering personalized recommendations.
 
