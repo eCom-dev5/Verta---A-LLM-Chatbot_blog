@@ -76,7 +76,7 @@ The integration of these workflows within the CI/CD pipeline occurs as follows:
    - Deploys the container to a staging Cloud Run service for testing.
 
 ![Staging Workflow](../images/5.png)
-![Staging](../images/6.png)
+<img src="../images/6.png" alt="Staging" width="550px" height="500px">
 
 ### Pull Request Creation
 - **Activity**: Once development is completed in the `staging` branch, a pull request is created to merge the changes into the `production` branch.

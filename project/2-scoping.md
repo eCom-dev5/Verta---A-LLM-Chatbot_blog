@@ -10,7 +10,7 @@
 7. [Cost Analysis](../project/7-cost_analysis.md)
 
 ## Dataset Information
-We’ll be using a dataset of reviews and metadata for video games and toys, sourced from Amazon product reviews. This dataset is essential for our eCommerce chatbot project, as it helps us understand customer experiences, preferences, and sentiments. By analyzing this data, we can improve the chatbot’s ability to provide relevant and accurate responses to user questions. Reviews in the dataset offer detailed customer feedback, while metadata provides key product information like categories, ratings, and prices—important for answering questions effectively.
+We’ll use a dataset of reviews and metadata for video games and toys, sourced from Amazon product reviews. This dataset is essential for our eCommerce chatbot project, as it helps us understand customer experiences, preferences, and sentiments. By analyzing this data, we can improve the chatbot’s ability to provide relevant and accurate responses to user questions. Reviews in the dataset offer detailed customer feedback, while metadata provides key product information like categories, ratings, and prices—important for answering questions effectively.
 
 With this data, we can create a smarter chatbot that offers personalized interactions based on customer feedback and product details. This approach will enhance user satisfaction and help boost sales by giving customers the information they need to make confident purchasing decisions.
 
@@ -20,9 +20,9 @@ Many eCommerce platforms rely on basic search features and static FAQs, which of
 Efforts to curate reviews or highlight feedback often fall short, leaving users struggling to understand overall sentiment or find answers to specific questions. Without a smarter, more dynamic approach, platforms miss opportunities to enhance engagement and improve the shopping experience.
 
 ## Proposed Solution
-Our solution is to create an intelligent eCommerce chatbot powered by Retrieval-Augmented Generation (RAG) for real-time, context-specific answers to customer questions. The chatbot will integrate seamlessly with the platform, activating when a user views a product. It will retrieve the relevant information using user reviews and product metadata to answer any quries asked by the user.
+Our solution is to create an intelligent eCommerce chatbot powered by Retrieval-Augmented Generation (RAG) for real-time, context-specific answers to customer questions. The chatbot will integrate seamlessly with the platform, activating when a user views a product. It will retrieve the relevant information using user reviews and product metadata to answer any queries the user asks.
 
-The chatbot will handle queries about product details and provide personalized recommendations based on customer preferences and past reviews. Using a large language model (LLM), it will generate coherent, engaging responses to enhance user satisfaction.
+The chatbot will handle queries about product details and provide personalized recommendations based on customer preferences and past reviews. Using a large language model (LLM) will generate coherent, engaging responses to enhance user satisfaction.
 
 The chatbot will feature an intuitive interface, making it easy for users to interact and receive tailored information. By offering a virtual assistant that understands context and adapts to user needs, we aim to improve the shopping experience, build trust, and boost customer loyalty and conversions.
 
@@ -30,8 +30,7 @@ The chatbot will feature an intuitive interface, making it easy for users to int
 
 **1. Data Retrieval Latency:**
 
-Delays in fetching data from database, especially when executing complex queries or dealing with large datasets.
-
+Delays in fetching data from databases, especially when executing complex queries or dealing with large datasets.
 
 **2. Resource-Intensive Vector Database Queries:**
 
@@ -64,7 +63,7 @@ Delays caused by the computational demands of the Large Language Model (LLM) whe
 
 **2. Boost Conversion Rates and Sales:** Address user concerns promptly to reduce cart abandonment, guiding users through their purchase journey and driving sales.
 
-**3. Improve Operational Efficiency:** Automate routine inquiries, allowing human agents to focus on complex issues, while maintaining service quality and reducing support costs.
+**3. Improve Operational Efficiency:** Automate routine inquiries, allowing human agents to focus on complex issues while maintaining service quality and reducing support costs.
 
 **4. Provide Actionable Business Insights:** Collect and analyze data to inform decisions on product offerings, inventory, and marketing strategies.
 
@@ -75,7 +74,7 @@ Delays caused by the computational demands of the Large Language Model (LLM) whe
 * Develop an AI-driven chatbot to provide real-time, accurate answers to customer inquiries on video games and toys, enhancing the shopping experience.
 * Personalize interactions for end customers by offering tailored product recommendations, improving satisfaction and conversion rates.
 * Provide actionable insights for business owners and managers to optimize product offerings, marketing strategies, and inventory management.
-* Streamline customer service operations by automating routine inquiries, freeing up agents for complex issues and improving support efficiency.
+* Streamline customer service operations by automating routine inquiries, freeing up agents for complex issues, and improving support efficiency.
 * Ensure a user-friendly and intuitive interface for both customers and business stakeholders to enhance engagement and operational effectiveness.
 
 ## Success Metrics 
@@ -85,7 +84,7 @@ This project focuses on implementing an intelligent eCommerce chatbot, incorpora
 **1. User Engagement:**
    
    * Measure session duration and number of interactions per session. 
-   * Track frequency of chatbot usage by unique users. 
+   * Track the frequency of chatbot usage by unique users. 
 
 **2. Response Accuracy:** 
 
@@ -95,11 +94,11 @@ This project focuses on implementing an intelligent eCommerce chatbot, incorpora
 **3. Customer Satisfaction:** 
 
    * Conduct post-interaction surveys. 
-   * Monitor Net Promoter Scores (NPS) to gauge likelihood of recommendation. 
+   * Monitor Net Promoter Scores (NPS) to gauge the likelihood of a recommendation. 
 
 **4. Conversion Rate:** 
 
-   * Track percentage of users making purchases after chatbot interaction. 
+   * Track the percentage of users making purchases after chatbot interaction. 
    * Analyze average order value for chatbot-assisted purchases. 
 
 **5. Latency and Response Time:** 
@@ -115,7 +114,7 @@ This project focuses on implementing an intelligent eCommerce chatbot, incorpora
 
 **7. Automated CI/CD and Continuous Training (CT) Workflow:** 
 
-   * Measure efficiency of data ingestion, model retraining, and deployment processes. 
+   * Measure the efficiency of data ingestion, model retraining, and deployment processes. 
    * Track seamless integration and deployment of updates with minimal manual effort. 
 
 **8. Continuous Monitoring (CM) and Dashboards:** 

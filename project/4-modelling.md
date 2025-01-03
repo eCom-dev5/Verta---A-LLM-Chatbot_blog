@@ -17,7 +17,7 @@ To ensure smooth operation and efficiency, the chatbot integrates with LangFuse,
 
 ## Base Model Architecture
 
-![Base Model Achitecture](../images/2.png)
+<img src="../images/2.png" alt="Base Model Achitecture" width="550px" height="500px">
 
 **1. Metadata Summarizer**
 - **Model:** llama3.1-8b

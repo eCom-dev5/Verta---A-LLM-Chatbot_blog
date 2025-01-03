@@ -10,11 +10,11 @@
 7. [Cost Analysis](../project/7-cost_analysis.md)
 
 ## Dataset Information 
-The dataset we will be working with consists of reviews and metadata for video games and toys, sourced from a comprehensive collection of Amazon product reviews. This dataset serves a crucial purpose for our eCommerce chatbot project by providing valuable insights into customer experiences, preferences, and sentiment regarding the products we offer. By analyzing this data, we can enhance the chatbot’s ability to respond to user inquiries with relevant and context-specific information. 
+The dataset we will work with consists of reviews and metadata for video games and toys sourced from a comprehensive collection of Amazon product reviews. This dataset serves a crucial purpose for our eCommerce chatbot project by providing valuable insights into customer experiences, preferences, and sentiments regarding our products. Analyzing this data can enhance the chatbot’s ability to respond to user inquiries with relevant and context-specific information.
 
-The relevance of this dataset lies in its ability to inform our understanding of customer opinions and trends within the video game and toy markets. By leveraging both the review and metadata components, we can create a more dynamic and interactive shopping experience. The reviews provide qualitative insights, while the metadata offers essential product details such as categories, ratings, and pricing information, which are integral to answering user queries accurately. 
+The relevance of this dataset lies in its ability to inform our understanding of customer opinions and trends within the video game and toy markets. We can create a more dynamic and interactive shopping experience by leveraging the review and metadata components. The reviews provide qualitative insights, while the metadata offers essential product details such as categories, ratings, and pricing information, which are integral to answering user queries accurately.
 
-Using this dataset will also enable us to implement a more intelligent retrieval system that enhances the user experience by allowing for personalized interactions based on past customer feedback and product attributes. This dual approach will not only increase customer satisfaction but also help drive sales by providing users with the information they need to make informed purchasing decisions. 
+Using this dataset will also enable us to implement a more intelligent retrieval system that enhances the user experience by allowing personalized interactions based on past customer feedback and product attributes. This dual approach will increase customer satisfaction and help drive sales by providing users with the information they need to make informed purchasing decisions. 
 
 Link to the Dataset [UCSD - Amazon Product Reviews](https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews).
 
@@ -65,11 +65,19 @@ The user reviews dataset for this category is stored in the file Toys_and_Games.
 
 The metadata for toys and games products is stored in the file meta_Toys_and_Games.jsonl, which contains 890,874 records across 16 columns. This dataset occupies 3.7 GB of memory and has no duplicate entries. Missing data is observed in 20% of the "features" column, 52% of the "price" column, and 65% of the video links. Furthermore, 10% of the "categories" column entries are incomplete. The majority of products (80%) fall under the "Toys and Games" category, and 13% have a 5-star rating. This metadata offers valuable insights into product characteristics and consumer preferences in this domain.
 
+Sample of the cleaned product metadata dataset,
+![Cleaned metadata dataset](../images/14.png)
+
+Sample of the user reviews dataset,
+![Cleaned reviews dataset](../images/15.png)
+
+
+
 ### 2. Data Rights and Privacy
 The dataset utilized in this project is governed by the MIT License, which provides flexibility in terms of usage, modification, and distribution with minimal restrictions. However, as part of our research, it is crucial to address data rights and privacy, particularly given the user-generated content involved, such as reviews and identifiers like user_id and timestamp. While the MIT License grants broad permissions, we have taken steps to ensure compliance with data protection regulations, including the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). This involves anonymizing or pseudonymizing personally identifiable information (PII) to safeguard users' privacy and mitigate the risk of sensitive data being misused. Additionally, we have ensured that the data handling practices align with the relevant privacy standards to uphold ethical research principles and maintain the integrity of user data throughout the project. 
 
 ## Data Pipeline
-The data pipeline is designed to process large JSON files into a structured schema and we employed Apache Airflow to modularized our data pipeline.
+The data pipeline is designed to process large JSON files into a structured schema and we employed Apache Airflow to modularize our data pipeline.
 
 ![Data Pipeline Workflow](../images/1.png)
 

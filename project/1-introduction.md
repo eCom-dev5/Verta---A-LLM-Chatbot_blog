@@ -22,7 +22,7 @@
 ### 1. Problem Statement
 Customers often struggle to find accurate and personalized answers to their product-related questions. Product descriptions can be overwhelming, and user reviews are scattered and hard to analyze. Businesses also face challenges in ensuring fair and unbiased responses while maintaining the reliability and scalability of their systems.
 
-This project aims to create an AI-powered chatbot that combines product details and user reviews using a multi-agent workflow and a vector store for efficient retrieval. The solution leverages GPT-based LLMs for natural language understanding, and CI/CD pipelines for seamless deployment. It focuses on delivering fast, reliable, and unbiased information while being easy to integrate into various platforms through a FASTAPI serverless API.
+This project aims to create an AI-powered chatbot that combines product details and user reviews using a multi-agent workflow and a vector store for efficient retrieval. The solution leverages GPT-based LLMs for natural language understanding and CI/CD pipelines for seamless deployment. It focuses on delivering fast, reliable, and unbiased information while being easy to integrate into various platforms through a FASTAPI serverless API.
 
 ### 2. Methodology
 **1. Data Collection and Preprocessing:** For this project, we utilized the Amazon Product metadata and review dataset for the Toys & Games and Video Games categories. Following this, the data was cleaned and converted into a schema-based format, which was then utilized for our project.
@@ -44,20 +44,22 @@ This project aims to create an AI-powered chatbot that combines product details 
  
 * Integrate seamlessly with existing eCommerce platforms to create a scalable, impactful solution.
 
-The source code for our project can be found here:  [GitHub](https://github.com/eCom-dev5/eCom-Chatbot)
+The source code for our project can be found here:  [GitHub](https://github.com/eCom-dev5/eCom-Chatbot).
+
+The source code for the E-Com web application we developed can be found here: [GitHub-UI-Code](https://github.com/eCom-dev5/eCom-Chatbot-UI).
 
 ### 4. Tools Used for MLOps
 
-* Python 3.12
-* PIP 24.3
-* GitHub Actions
-* AirFlow
-* MLflow
-* GPT 4.0 mini, Llama3.1 8B, Llama3.1 70B and HuggingFace Transformer
-* Faiss DB
-* Docker
-* Google Cloud Platform (Buckets, Cloudrun, CloudSQL, Cloud Log Monitoring and Artifact Register)
-* LangFuse (Monitoring & Dashboards)
+* [Python 3.12](https://www.python.org/)
+* [PIP 24.3](https://pypi.org/project/pip/)
+* [GitHub Actions](https://github.com/features/actions)
+* [AirFlow](https://airflow.apache.org/)
+* [MLflow](https://mlflow.org/)
+* [GPT 4.0 mini](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/), [Llama3.1 8B](https://huggingface.co/meta-llama/Llama-3.1-8B), [Llama3.1 70B](https://huggingface.co/meta-llama/Llama-3.1-70B) and [HuggingFace Transformer]
+* [Faiss DB](https://engineering.fb.com/2017/03/29/data-infrastructure/faiss-a-library-for-efficient-similarity-search/)
+* [Docker](https://www.docker.com/)
+* [Google Cloud Platform](https://cloud.google.com/) (Buckets, Cloudrun, CloudSQL, Cloud Log Monitoring and Artifact Registry)
+* [LangFuse](https://langfuse.com/) (Monitoring & Dashboards)
 
 ### 5. Project Architecture
 
