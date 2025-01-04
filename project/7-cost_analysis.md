@@ -74,9 +74,9 @@ For a query with **1,500 input tokens** and **450 output tokens**:
 
 - **Cloud Run ($63.77)**: Costs are driven by handling backend services like LangGraph workflows, APIs, and user interactions, with autoscaling increasing instances during testing. Optimizations include reducing minimum instances to zero during idle periods, shortening timeouts to avoid resource locking, and fine-tuning concurrency to maximize instance usage.
 
-- **Container Registry Vulnerability Scanning ($26.78)**: Regular scans for Docker image vulnerabilities ensure security compliance. Optimizations involve scheduling scans only for major updates, excluding stable images from frequent scans, and focusing on critical updates.
+- **Container Registry Vulnerability Scanning ($26.78)**: Regular scans for [Docker](https://www.docker.com/) image vulnerabilities ensure security compliance. Optimizations involve scheduling scans only for major updates, excluding stable images from frequent scans, and focusing on critical updates.
 
-- **Artifact Registry ($6.79)**: Hosts all Docker images for staging and production, with costs stemming from storing multiple versions. Optimizations include enabling lifecycle rules to delete unused images and manually removing deprecated versions.
+- **Artifact Registry ($6.79)**: Hosts all [Docker](https://www.docker.com/) images for staging and production, with costs stemming from storing multiple versions. Optimizations include enabling lifecycle rules to delete unused images and manually removing deprecated versions.
 
 - **Cloud Storage ($0.55)**: Used for temporary storage of evaluation results, logs, and workflow artifacts, with small-scale usage driving costs. Optimizations include moving older logs to Nearline Storage and automating stale data deletion after 30 days.
 
@@ -98,28 +98,28 @@ For a query with **1,500 input tokens** and **450 output tokens**:
 ## Optimization Opportunities
 
 ### Short-Term
-1. Lower minimum instance counts in **Cloud Run** during off-hours.
+1. Lower minimum instance counts in **[Cloud Run](https://cloud.google.com/run)** during off-hours.
 2. Schedule **vulnerability scans** only for major updates.
-3. Delete old Docker images from **Artifact Registry**.
+3. Delete old [Docker](https://www.docker.com/) images from the **[Artifact Registry](https://cloud.google.com/artifact-registry/docs)**.
 
 ### Long-Term
 1. Use **Coldline Storage** for archiving older logs and evaluation data.
-2. Consolidate metrics tracking to **Vertex AI** for reduced redundancy.
-3. Automate instance scaling and downgrading for **Cloud SQL** during non-peak periods.
+2. Consolidate metrics tracking to **[Vertex AI](https://cloud.google.com/vertex-ai)** for reduced redundancy.
+3. Automate instance scaling and downgrading for **[Cloud SQL](https://cloud.google.com/sql)** during non-peak periods.
 
 
 ## Structure of the Cost
 
 ### What caused the costs to rise?
-1. Heavy database usage from Cloud SQL due to real-time queries and storage needs.
-2. Cloud Run’s autoscaling handled intense evaluation and testing workloads.
+1. Heavy database usage from [Cloud SQL](https://cloud.google.com/sql) due to real-time queries and storage needs.
+2. [Cloud Run](https://cloud.google.com/run)’s autoscaling handled intense evaluation and testing workloads.
 3. Regular container scans added a consistent layer of expense.
 
 ### How are the costs justified?
 These costs reflect the project’s **scalable infrastructure**:
-- Real-time analytics and processing in Cloud Run.
+- Real-time analytics and processing in [Cloud Run](https://cloud.google.com/run).
 - Secure image deployments via Container Registry.
-- Centralized data storage and querying through Cloud SQL.
+- Centralized data storage and querying through [Cloud SQL](https://cloud.google.com/sql).
 
 
 ## Future Cost Monitoring

@@ -11,7 +11,7 @@
 
 ## Overview
 
-In this project, logging and monitoring are central to ensuring the chatbot operates smoothly and effectively. From tracking user queries to monitoring system performance, logs are invaluable in diagnosing issues, optimizing responses, and understanding user interactions. With **LangFuse Analytics**, **Google Cloud Run Logs**, and **Google Log Monitoring**, we have a powerful, comprehensive logging system to track and analyze the entire chatbot lifecycle.
+In this project, logging and monitoring are central to ensuring the chatbot operates smoothly and effectively. From tracking user queries to monitoring system performance, logs are invaluable in diagnosing issues, optimizing responses, and understanding user interactions. With **[LangFuse Analytics](https://langfuse.com/)**, **[Google Cloud Run Logs](https://cloud.google.com/run)**, and **[Google Log Monitoring](https://cloud.google.com/logging)**, we have a powerful, comprehensive logging system to track and analyze the entire chatbot lifecycle.
 
 Our logs help us:
 - Monitor query traces and user sessions.
@@ -29,7 +29,7 @@ Our logs help us:
 ## Logging System Breakdown
 
 ### 1. LangFuse Trace Analytics
-**LangFuse is our go-to tool for detailed session and query monitoring.** Every user query is traced step-by-step, from the time it’s received to the final response. This ensures we always know how the chatbot performs, where errors occur, and how tokens are being used. Langfuse also helps in scoring user-feedback for a particular query for improving the model later on.
+**[LangFuse](https://langfuse.com/) is our go-to tool for detailed session and query monitoring.** Every user query is traced step-by-step, from the time it’s received to the final response. This ensures we always know how the chatbot performs, where errors occur, and how tokens are being used. [Langfuse](https://langfuse.com/) also helps in scoring user-feedback for a particular query for improving the model later on.
 
 #### Key Features
 - **Query Traces**:
@@ -50,9 +50,9 @@ Our logs help us:
 - **Input Tokens**: 8,405
 - **Output Tokens**: 132
 - **Latency**: 5.56s
-- **Feedback**: User marked this response as helpful.
+- **Feedback**: The user marked this response as helpful.
 
-*Langfuse helps in in-depth workflow tracing*
+*Langfuse helps in in-depth workflow tracing,*
 ![Langfuse Trace](../images/11.png)
 
 #### Example LangFuse Feedback Scoring
@@ -72,7 +72,7 @@ Scores are human feedback given on a response from the model. We use these score
 
 
 ### 2. Google Cloud Run Logs
-Cloud Run logs keep our deployment and traffic insights intact. Whether it’s tracking API traffic or diagnosing failed requests, these logs are essential to understanding how well our deployments are scaling and responding to real-world user queries.
+[Cloud Run](https://cloud.google.com/run) logs keep our deployment and traffic insights intact. Whether it’s tracking API traffic or diagnosing failed requests, these logs are essential to understanding how well our deployments are scaling and responding to real-world user queries.
 
 #### Key Features
 - **Deployment Monitoring**:
@@ -98,11 +98,11 @@ Cloud Run logs keep our deployment and traffic insights intact. Whether it’s t
 
 
 ### 3. Google Log Monitoring
-Google Log Monitoring ties it all together with centralized insights. We use it to track API usage, monitor container logs, and even analyze front-end and back-end traffic trends.
+[Google Log Monitoring](https://cloud.google.com/logging) ties it all together with centralized insights. We use it to track API usage, monitor container logs, and even analyze front-end and back-end traffic trends.
 
 #### Key Features
 - **Centralized Monitoring**:
-  Combines logs from LangFuse, Cloud Run, and API Gateway.
+  Combines logs from [LangFuse](https://langfuse.com/), [Cloud Run](https://cloud.google.com/run), and API Gateway.
 - **Traffic Analysis**:
   Visualizes API usage spikes, slow queries, and latency.
 - **Error Alerts**:
@@ -119,20 +119,20 @@ Logs pinpoint exactly where a query fails or where latency spikes occur. We trac
 - Token usage and response generation at each stage.
 
 ### 2. Optimizing Model Performance
-With LangFuse, we track tokens consumed during input, output, and metadata retrieval. These insights guide us in:
+With [LangFuse](https://langfuse.com/), we track tokens consumed during input, output, and metadata retrieval. These insights guide us in:
 - Reducing unnecessary token usage.
 - Adjusting prompts for better LLM responses.
 
 ### 3. Deployment and Version Rollback
-Using Cloud Run logs, we monitor deployments and quickly identify unstable revisions. If something breaks, rolling back is seamless:
-1. Navigate to the Cloud Run **Revisions** tab.
+Using [Cloud Run](https://cloud.google.com/run) logs, we monitor deployments and quickly identify unstable revisions. If something breaks, rolling back is seamless:
+1. Navigate to the [Cloud Run](https://cloud.google.com/run) **Revisions** tab.
 2. Select the previous stable revision.
-3. Redirect 100% traffic to it with one click.
+3. Redirect 100% of traffic to it with one click.
 
 ### 4. Analyzing User Interactions
-LangFuse logs help us understand user behavior:
+[LangFuse](https://langfuse.com/) logs help us understand user behavior:
 - Which queries are most common.
-- How often users find responses helpful (tracked via feedback).
+- How often do users find responses helpful (tracked via feedback).
 
 
 

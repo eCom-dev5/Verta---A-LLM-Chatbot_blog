@@ -77,7 +77,8 @@ Sample of the user reviews dataset,
 The dataset utilized in this project is governed by the MIT License, which provides flexibility in terms of usage, modification, and distribution with minimal restrictions. However, as part of our research, it is crucial to address data rights and privacy, particularly given the user-generated content involved, such as reviews and identifiers like user_id and timestamp. While the MIT License grants broad permissions, we have taken steps to ensure compliance with data protection regulations, including the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). This involves anonymizing or pseudonymizing personally identifiable information (PII) to safeguard users' privacy and mitigate the risk of sensitive data being misused. Additionally, we have ensured that the data handling practices align with the relevant privacy standards to uphold ethical research principles and maintain the integrity of user data throughout the project. 
 
 ## Data Pipeline
-The data pipeline is designed to process large JSON files into a structured schema and we employed Apache Airflow to modularize our data pipeline.
+The data pipeline is designed to process large JSON files into a structured schema and we employed [Apache Airflow](https://airflow.apache.org/)
+* [MLflow](https://mlflow.org/) to modularize our data pipeline.
 
 ![Data Pipeline Workflow](../images/1.png)
 
@@ -103,7 +104,7 @@ The data pipeline is designed to process large JSON files into a structured sche
 
 **Task 4: Establish Database Connection (db_connection.py)**
 * Operator: PythonOperator
-* Description: Configures the database connection to Google Cloud SQL using secure credentials.
+* Description: Configures the database connection to Google [Cloud SQL](https://cloud.google.com/sql) using secure credentials.
 
 **Task 5: Load CSV into Database (CSV_to_DB.py)**
 * Operator: BashOperator

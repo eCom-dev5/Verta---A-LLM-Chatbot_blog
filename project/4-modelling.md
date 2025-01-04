@@ -32,7 +32,7 @@ To ensure smooth operation and efficiency, the chatbot integrates with LangFuse,
 
 
 **2. Supervisor Module**
-- **Model:** gpt-4o-mini
+- **Model:** GPT-4o-mini
 - **Role**:
    - Acts as the decision-making layer, routing queries based on their type (metadata vs. unstructured).
 - **Workflow**:
@@ -95,7 +95,7 @@ To ensure smooth operation and efficiency, the chatbot integrates with LangFuse,
    - Summarizes structured metadata for clarity and brevity.
 
 3. **Supervisor Routing**  
-   - The Supervisor Module determines whether the query relates to main llm or unstructured contextual data.
+   - The Supervisor Module determines whether the query relates to the main llm or unstructured contextual data.
 
 3. **Data Retrieval**  
    - Contextual queries → Vectorstore Retriever retrieves relevant unstructured data.
@@ -107,7 +107,7 @@ To ensure smooth operation and efficiency, the chatbot integrates with LangFuse,
    - A follow-up query is generated to improve user interaction and clarify ambiguous queries.
 
 6. **Analytics Logging**  
-   - LangFuse logs the entire interaction, including token usage, trace data, and performance metrics.
+   - [LangFuse](https://langfuse.com/) logs the entire interaction, including token usage, trace data, and performance metrics.
 
 ## Model Evaluation
 The `model_evaluation` pipeline evaluates chatbot responses by leveraging user reviews, metadata, and test datasets. The evaluation metrics include **context precision**, **faithfulness**, **answer relevancy**, and **context recall**. The pipeline supports modular experimentation by allowing parameter and configuration adjustments in the `config/` folder.
@@ -123,14 +123,14 @@ The `model_evaluation` pipeline evaluates chatbot responses by leveraging user r
 
 #### MLFlow to Compare Multiple Versions of the Model
 
-MLFlow is an integral part of our MLOps pipeline, providing model versioning, management, and serving capabilities.
+[MLFlow](https://mlflow.org/) is an integral part of our MLOps pipeline, providing model versioning, management, and serving capabilities.
 
 **Model Version Comparisons**:
   Comparisons between various Prompts and the evaluation metrics
   ![alt text](../images/3.png)
   ![alt text](../images/4.png)
 
-A more detailed documentation for the model evaulation pipeline can be found here:  [Model Evaluation doc.](https://github.com/eCom-dev5/eCom-Chatbot/blob/dev/readme/03_MODEL_EVALUATION.md)
+More detailed documentation for the model evaluation pipeline is available:  [Model Evaluation doc.](https://github.com/eCom-dev5/eCom-Chatbot/blob/dev/readme/03_MODEL_EVALUATION.md)
 
 ## Bias Detection
 The `bias_detection` pipeline identifies biases in product reviews using sentiment analysis, embeddings, and metadata. It flags issues like focusing too much on negative reviews, ignoring limited data, and unbalanced sentiment. The pipeline supports modular experimentation by allowing parameter and configuration adjustments in the `config/` directory.
@@ -144,4 +144,4 @@ The `bias_detection` pipeline identifies biases in product reviews using sentime
 | **num reviews**          | total number of product reviews retrieved and analyzed for each ASIN.                          |
 | **review sentiments**    | A breakdown of the sentiment distribution (positive, neutral, negative).                       |
 
-A more detailed documentation for the bias detection pipeline can be found here:  [Bias Detection doc.](https://github.com/eCom-dev5/eCom-Chatbot/blob/dev/readme/04_BIAS_DETECTION.md)
+More detailed documentation for the bias detection pipeline can be found here:  [Bias Detection doc.](https://github.com/eCom-dev5/eCom-Chatbot/blob/dev/readme/04_BIAS_DETECTION.md)

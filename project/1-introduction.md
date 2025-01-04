@@ -18,9 +18,11 @@
 6. [Logging and Monitoring](../project/6-logging.md)
 7. [Cost Analysis](../project/7-cost_analysis.md)
 
+--
 ## Demo Video
 
 [![Watch the video](../images/16.png)](https://youtu.be/1qPZXRPTz8w)
+--
 
 ## Introduction
 ### 1. Problem Statement
@@ -37,7 +39,7 @@ This project aims to create an AI-powered chatbot that combines product details 
 
 **4. Bias Detection:** For the given prompts, we conducted sentiment analysis and calculated the percentage distribution across three sentiment categories: positive, negative, and neutral. By rerunning this module, any changes in this distribution can be detected. If significant changes are observed, it may indicate the presence of bias.
 
-**5. CI/CD/CM:** GitHub Actions is used to implement CI/CD processes, enabling us to deploy and run our project on GCP using Cloud Run. For monitoring, we utilized GCP Cloud Monitoring and Langfuse for tracking model responses.
+**5. CI/CD/CM:** GitHub Actions is used to implement CI/CD processes, enabling us to deploy and run our project on GCP using [Cloud Run](https://cloud.google.com/run). For monitoring, we utilized GCP Cloud Monitoring and Langfuse for tracking model responses.
 
 ### 3. Goals
 * Enhance the eCommerce shopping experience by addressing challenges in navigating product reviews and information.
