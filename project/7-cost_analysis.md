@@ -70,7 +70,7 @@ For a query with **1,500 input tokens** and **450 output tokens**:
 
 
 
-- **Cloud SQL ($110.31)**: The high cost is due to its role as the primary data storage for product metadata, chatbot logs, and evaluation queries, requiring a high I/O instance, backups for disaster recovery, and persistent connections with Cloud Run. Optimizations include query tuning, scheduling backups during off-peak hours, and downgrading the instance type during low-traffic periods.
+- **Cloud SQL ($110.31)**: The high cost is due to its role as the primary data storage for product metadata, chatbot logs, and evaluation queries, requiring a high I/O instance, backups for disaster recovery, and persistent connections with [Cloud Run](https://cloud.google.com/run). Optimizations include query tuning, scheduling backups during off-peak hours, and downgrading the instance type during low-traffic periods.
 
 - **Cloud Run ($63.77)**: Costs are driven by handling backend services like [LangGraph](https://www.langchain.com/langgraph) workflows, APIs, and user interactions, with autoscaling increasing instances during testing. Optimizations include reducing minimum instances to zero during idle periods, shortening timeouts to avoid resource locking, and fine-tuning concurrency to maximize instance usage.
 
