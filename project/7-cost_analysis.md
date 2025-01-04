@@ -82,7 +82,7 @@ For a query with **1,500 input tokens** and **450 output tokens**:
 
 - **Vertex AI ($0.36)**: Tracks experiment results and evaluation metrics, with light usage for logging. Optimizations include logging only essential fields and archiving older experiments post-analysis.
 
-- **Networking ($0.04)**: Minimal costs arise from data transfer between services like Cloud Run and Cloud SQL. Optimizations include using private IP connections to minimize external traffic and reducing unnecessary API calls.
+- **Networking ($0.04)**: Minimal costs arise from data transfer between services like [Cloud Run](https://cloud.google.com/run) and [Cloud SQL](https://cloud.google.com/sql). Optimizations include using private IP connections to minimize external traffic and reducing unnecessary API calls.
 
 
 

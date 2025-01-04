@@ -15,14 +15,14 @@ The **Verta-Chatbot** project implements a robust Continuous Integration and Con
 - Automated unit and integration testing.
 - Seamless containerization and storage in **Google Artifact Registry**.
 - Scalable deployment to **[Google Cloud Run](https://cloud.google.com/run)**.
-- Integration with LangGraph workflows and external APIs (e.g., OpenAI, HuggingFace).
+- Integration with [LangGraph](https://www.langchain.com/langgraph) workflows and external APIs (e.g., OpenAI, HuggingFace).
 
 This document provides a detailed explanation of the project structure, CI/CD workflows, testing integration, and deployment to staging and production environments.
 
 ## Project Features
 
 1. **Integrated Workflows**:
-   - LangGraph workflows for pipeline orchestration.
+   - [LangGraph](https://www.langchain.com/langgraph) workflows for pipeline orchestration.
    - Automated execution of stages like data ingestion, evaluation, and bias detection.
 
 2. **Cloud-Native Deployment**:
@@ -34,7 +34,7 @@ This document provides a detailed explanation of the project structure, CI/CD wo
    - Integrated testing for application reliability.
 
 4. **Comprehensive Testing**:
-   - Unit tests for API endpoints, Python workflows, and LangGraph nodes.
+   - Unit tests for API endpoints, Python workflows, and [LangGraph](https://www.langchain.com/langgraph) nodes.
    - Automated test result reporting.
 
 ## CI/CD Workflow
@@ -110,14 +110,14 @@ The integration of these workflows within the CI/CD pipeline occurs as follows:
    [docker](https://www.docker.com/) build -t "us-east1-docker.pkg.dev/{PROJECT_ID}/{GAR_NAME}/{SERVICE}:{COMMIT_SHA}" -f Dockerfile .
    ```
 2. **Push to Registry:**
-   - Pushes the [Docker](https://www.docker.com/) image to Google Artifact Registry:
+   - Pushes the [Docker](https://www.docker.com/) image to [Google Artifact Registry](https://cloud.google.com/artifact-registry/docs):
    ```bash
    [docker](https://www.docker.com/) push "us-east1-docker.pkg.dev/{PROJECT_ID}/{GAR_NAME}/{SERVICE}:{COMMIT_SHA}"
    ```
 
 ### Cloud Run Deployment
 1. **Configuration:**
-   - Cloud Run is configured with the following:
+   - [Cloud Run](https://cloud.google.com/run) is configured with the following:
      - **Memory:** 16Gi
      - **CPU:** 4
      - **Autoscaling:** Min 1, Max 10 instances
