@@ -18,6 +18,8 @@
 6. [Logging and Monitoring](../project/6-logging.md)
 7. [Cost Analysis](../project/7-cost_analysis.md)
 
+[![Watch the video](../images/16.png)](https://youtu.be/1qPZXRPTz8w)
+
 ## Introduction
 ### 1. Problem Statement
 Customers often struggle to find accurate and personalized answers to their product-related questions. Product descriptions can be overwhelming, and user reviews are scattered and hard to analyze. Businesses also face challenges in ensuring fair and unbiased responses while maintaining the reliability and scalability of their systems.
