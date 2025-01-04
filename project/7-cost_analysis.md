@@ -38,7 +38,7 @@ The structure and the need for these services are directly tied to the projectâ€
 ---
 ## ChatGPT Model Token Cost
 
-As part of the chatbot architecture, ChatGPT (GPT-4.0 Mini) is used for generating responses. Token usage and associated costs are monitored to ensure optimal resource utilization.
+As part of the chatbot architecture, ChatGPT ([GPT-4.0 Mini]((https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/))) is used for generating responses. Token usage and associated costs are monitored to ensure optimal resource utilization.
 
 
 

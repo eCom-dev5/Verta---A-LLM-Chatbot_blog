@@ -33,13 +33,13 @@ This project aims to create an AI-powered chatbot that combines product details 
 ### 2. Methodology
 **1. Data Collection and Preprocessing:** For this project, we utilized the Amazon Product metadata and review dataset for the Toys & Games and Video Games categories. Following this, the data was cleaned and converted into a schema-based format, which was then utilized for our project.
 
-**2. Model Implementation:**  We used four different LLMs in our application: GPT-4o Mini as a supervisor agent, Hugging Face for generating embeddings, Llama 3.1 8B as an agent for summarizing and follow-up question generation, and Llama 3.1 70B as the responding agent.
+**2. Model Implementation:**  We used four different LLMs in our application: [GPT-4o Mini](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/) as a supervisor agent, Hugging Face for generating embeddings, [Llama 3.1 8B]((https://huggingface.co/meta-llama/Llama-3.1-8B)) as an agent for summarizing and follow-up question generation, and [Llama 3.1 70B](https://huggingface.co/meta-llama/Llama-3.1-70B) as the responding agent.
 
-**3. Model Evaluation:** Used RAGAS to evaluate our model's performance for specific prompts based on the following metrics: Context, Precision, Answer Relevance.
+**3. Model Evaluation:** Used [RAGAS](https://docs.ragas.io/en/stable/) to evaluate our model's performance for specific prompts based on the following metrics: Context, Precision, Answer Relevance.
 
 **4. Bias Detection:** For the given prompts, we conducted sentiment analysis and calculated the percentage distribution across three sentiment categories: positive, negative, and neutral. By rerunning this module, any changes in this distribution can be detected. If significant changes are observed, it may indicate the presence of bias.
 
-**5. CI/CD/CM:** GitHub Actions is used to implement CI/CD processes, enabling us to deploy and run our project on GCP using [Cloud Run](https://cloud.google.com/run). For monitoring, we utilized GCP Cloud Monitoring and Langfuse for tracking model responses.
+**5. CI/CD/CM:** GitHub Actions is used to implement CI/CD processes, enabling us to deploy and run our project on GCP using [Cloud Run](https://cloud.google.com/run). For monitoring, we utilized [GCP Cloud Monitoring](https://cloud.google.com/monitoring?hl=en) and [Langfuse](https://langfuse.com/) for tracking model responses.
 
 ### 3. Goals
 * Enhance the eCommerce shopping experience by addressing challenges in navigating product reviews and information.

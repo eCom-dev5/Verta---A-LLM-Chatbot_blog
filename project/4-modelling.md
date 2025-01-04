@@ -20,7 +20,7 @@ To ensure smooth operation and efficiency, the chatbot integrates with LangFuse,
 <img src="../images/2.png" alt="Base Model Achitecture" width="550px" height="500px">
 
 **1. Metadata Summarizer**
-- **Model:** llama3.1-8b
+- **Model:** [llama3.1-8b](https://huggingface.co/meta-llama/Llama-3.1-8B)
 - **Role**:
    - Summarizes structured data into concise and readable formats.
 - **Workflow**:
@@ -32,7 +32,7 @@ To ensure smooth operation and efficiency, the chatbot integrates with LangFuse,
 
 
 **2. Supervisor Module**
-- **Model:** GPT-4o-mini
+- **Model:** [GPT-4o-mini](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/)
 - **Role**:
    - Acts as the decision-making layer, routing queries based on their type (metadata vs. unstructured).
 - **Workflow**:
@@ -40,8 +40,8 @@ To ensure smooth operation and efficiency, the chatbot integrates with LangFuse,
    - Routes queries to either the Metadata Retriever or the Vectorstore Retriever.
 
 **3. Vectorstore Retriever**
-- **Database**: FAISS Vectorstore
-- **Embedding Model**: HuggingFace All-MiniLM-v6
+- **Database**: [FAISS](https://engineering.fb.com/2017/03/29/data-infrastructure/faiss-a-library-for-efficient-similarity-search/) Vectorstore
+- **Embedding Model**: [HuggingFace All-MiniLM-v6](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
 - **Role**:
    - Retrieves unstructured textual data (e.g., reviews, descriptions) using vector embeddings.
 - **Workflow**:
@@ -52,7 +52,7 @@ To ensure smooth operation and efficiency, the chatbot integrates with LangFuse,
 
 
 **4. Main LLM**
-- **Model:** llama3.1-70b
+- **Model:** [llama3.1-70b](https://huggingface.co/meta-llama/Llama-3.1-70B)
 - **Role**:
    - Synthesizes a comprehensive response by combining:
      - User inputs.
@@ -66,7 +66,7 @@ To ensure smooth operation and efficiency, the chatbot integrates with LangFuse,
    - Output: "The product offers industry-leading noise cancellation, lightweight construction, and a battery life of 10 hours."
 
 **5. Follow-up Question Generator**
-- **Model:** llama3.1-70b
+- **Model:** [llama3.1-70b](https://huggingface.co/meta-llama/Llama-3.1-70B)
 - **Role**:
    - Enhances the user experience by generating relevant follow-up questions.
 - **Workflow**:
