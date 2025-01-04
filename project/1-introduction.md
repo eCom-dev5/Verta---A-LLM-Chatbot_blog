@@ -28,7 +28,7 @@
 ### 1. Problem Statement
 Customers often struggle to find accurate and personalized answers to their product-related questions. Product descriptions can be overwhelming, and user reviews are scattered and hard to analyze. Businesses also face challenges in ensuring fair and unbiased responses while maintaining the reliability and scalability of their systems.
 
-This project aims to create an AI-powered chatbot that combines product details and user reviews using a multi-agent workflow and a vector store for efficient retrieval. The solution leverages GPT-based LLMs for natural language understanding and CI/CD pipelines for seamless deployment. It focuses on delivering fast, reliable, and unbiased information while being easy to integrate into various platforms through a FASTAPI serverless API.
+This project aims to create an AI-powered chatbot that combines product details and user reviews using a multi-agent workflow and a vector store for efficient retrieval. The solution leverages GPT-based LLMs for natural language understanding and CI/CD pipelines for seamless deployment. It focuses on delivering fast, reliable, and unbiased information while being easy to integrate into various platforms through a [FASTAPI](https://fastapi.tiangolo.com/) serverless API.
 
 ### 2. Methodology
 **1. Data Collection and Preprocessing:** For this project, we utilized the Amazon Product metadata and review dataset for the Toys & Games and Video Games categories. Following this, the data was cleaned and converted into a schema-based format, which was then utilized for our project.
