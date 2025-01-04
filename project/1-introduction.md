@@ -18,11 +18,12 @@
 6. [Logging and Monitoring](../project/6-logging.md)
 7. [Cost Analysis](../project/7-cost_analysis.md)
 
---
+---
 ## Demo Video
 
 [![Watch the video](../images/16.png)](https://youtu.be/1qPZXRPTz8w)
---
+
+---
 
 ## Introduction
 ### 1. Problem Statement
