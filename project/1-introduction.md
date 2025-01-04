@@ -33,7 +33,7 @@ This project aims to create an AI-powered chatbot that combines product details 
 ### 2. Methodology
 **1. Data Collection and Preprocessing:** For this project, we utilized the Amazon Product metadata and review dataset for the Toys & Games and Video Games categories. Following this, the data was cleaned and converted into a schema-based format, which was then utilized for our project.
 
-**2. Model Implementation:**  We used four different LLMs in our application: [GPT-4o Mini](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/) as a supervisor agent, Hugging Face for generating embeddings, [Llama 3.1 8B]((https://huggingface.co/meta-llama/Llama-3.1-8B)) as an agent for summarizing and follow-up question generation, and [Llama 3.1 70B](https://huggingface.co/meta-llama/Llama-3.1-70B) as the responding agent.
+**2. Model Implementation:**  We used four different LLMs in our application: [GPT-4o Mini](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/) as a supervisor agent, Hugging Face for generating embeddings, [Llama 3.1 8B](https://huggingface.co/meta-llama/Llama-3.1-8B) as an agent for summarizing and follow-up question generation, and [Llama 3.1 70B](https://huggingface.co/meta-llama/Llama-3.1-70B) as the responding agent.
 
 **3. Model Evaluation:** Used [RAGAS](https://docs.ragas.io/en/stable/) to evaluate our model's performance for specific prompts based on the following metrics: Context, Precision, Answer Relevance.
 
